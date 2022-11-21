@@ -14,9 +14,10 @@ public class ItemCollector : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Coin"))
         {
-            Destroy(other.gameObject);
+           
             coins++;
             coinsText.text = "Coins: " + coins;
+             Destroy(other.gameObject);
             collectionSound.Play();
         }
     }
